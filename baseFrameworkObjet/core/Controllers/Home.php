@@ -1,0 +1,32 @@
+<?php
+namespace Controllers;
+
+class Home extends Controller{
+
+    protected $modelName = \Model\Exemple::class;
+
+    /**
+     * 
+     * affiche la page home
+     */
+    public function index()
+    
+    {
+        
+
+           /*  $userModel = new \Model\User();
+             $user = $userModel->getUser(); */
+        
+           
+
+
+     /*  $donneesExemple = $this->model->findAll($this->modelName); */
+         
+        $contenu = "votreContenuIci";
+
+         $titreDeLaPage = "Le titre de la page"; 
+
+        \Rendering::render('home/home', compact('contenu','titreDeLaPage')); 
+    }
+
+}
